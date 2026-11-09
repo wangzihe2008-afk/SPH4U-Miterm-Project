@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#080d14">
+  <meta name="description" content="Five scenes from Spider-Man: Homecoming. Five interactive SPH4U physics experiments.">
+  <title>Behind the Web | SPH4U Physics Lab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="topbar">
+    <button class="brand" data-route="home" type="button" aria-label="Behind the Web: home">
+      <span class="brand-mark" aria-hidden="true"><span class="brand-cross">✳</span></span>
+      <span class="brand-label">BEHIND <b>THE WEB</b><small>SPH4U // THE PHYSICS LAB</small></span>
+    </button>
+    <nav class="primary-nav" aria-label="Main navigation">
+      <button type="button" class="nav-link" data-route="home">HOME</button>
+      <button type="button" class="nav-link" data-route="cases">FIVE CASES</button>
+    </nav>
+    <div class="header-actions">
+      <span class="live-dot" aria-hidden="true"></span><span class="on-air">INTERACTIVE MODE</span>
+      <button type="button" id="presentBtn" class="icon-button" title="Toggle presentation focus (P)" aria-label="Toggle presentation focus">⛶</button>
+    </div>
+  </header>
+  <main id="app" tabindex="-1"></main>
+  <footer class="footer">
+    <span>SPH4U · PHYSICS IN FILM</span><span>FIVE SELECTED SCENES. MODEL-BASED RESULTS.</span><span>NO ACCOUNT · NO DATABASE</span>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <input type="file" id="clipInput" accept="video/*" hidden>
+  <script src="app.js"></script>
+</body>
+</html>
